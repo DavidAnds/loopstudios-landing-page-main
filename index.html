@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <!-- **************************HEADER******************************* -->
+    <header class="header" id="header">
+      <div class="header__container container">
+        <!-- Navbar -->
+        <nav class="header__navbar navbar">
+          <div class="navbar__logo logo">
+            <a href="#header" class="logo__link">
+              <img
+                src="./images/logo.svg"
+                alt="Loopstudios logo"
+                class="logo__img"
+              />
+            </a>
+          </div>
+          <button class="navbar__nav-btn nav-btn">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="icon hamburger"
+              class="nav-btn__img"
+            />
+          </button>
+          <ul class="navbar__nav nav">
+            <li class="nav__item">
+              <a href="#" class="nav__link link"> About </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link"> Careers </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link"> Events </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link"> Products </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link"> Support </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- END Navbar -->
+
+        <!-- Title -->
+        <h1 class="header__title primary-title">
+          Immersive experiences that deliver
+        </h1>
+        <!-- END title -->
+      </div>
+    </header>
+    <!-- **************************END HEADER******************************* -->
+
+    <!-- **************************MAIN******************************* -->
+    <main class="main">
+      <div class="main__container container">
+        <!-- Presentation -->
+        <div class="main__presentation presentation">
+          <div class="presentation__img-box">
+            <img
+              srcset="
+                ./images/mobile/image-interactive.jpg  654w,
+                ./images/desktop/image-interactive.jpg 731w
+              "
+              sizes="
+              ((max-width: 600px)) 654px,
+              731px"
+              src="./images/mobile/image-interactive.jpg"
+              alt="A man using a VR"
+              class="presentation__img"
+            />
+          </div>
+          <div class="presentation__text-box">
+            <h2 class="presentation__title secondary-title">
+              The leader in interactive VR
+            </h2>
+            <p class="presentation__text">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </div>
+        <!-- END Presentation -->
+
+        <!-- Creations -->
+        <div class="main__creations creations">
+          <h2 class="creations__title secondary-title">Our creations</h2>
+          <!-- Gallery -->
+          <div class="creations__gallery gallery">
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-deep-earth.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-deep-earth.jpg"
+                  alt="Image deep earth"
+                />
+              </picture>
+              <h3 class="card__title">Deep <br />earth</h3>
+            </div>
+            <!-- END card -->
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-night-arcade.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-night-arcade.jpg"
+                  alt="Image night arcade"
+                />
+              </picture>
+              <h3 class="card__title">Night <br />arcade</h3>
+            </div>
+            <!-- END Card -->
+
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-soccer-team.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-soccer-team.jpg"
+                  alt="Image Soccer team"
+                />
+              </picture>
+              <h3 class="card__title">Soccer <br />team vr</h3>
+            </div>
+            <!-- END Card -->
+
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-grid.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-grid.jpg"
+                  alt="Image the grid"
+                />
+              </picture>
+              <h3 class="card__title">The <br />grid</h3>
+            </div>
+            <!-- END Card -->
+
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-from-above.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-from-above.jpg"
+                  alt="Image from above"
+                />
+              </picture>
+              <h3 class="card__title">
+                from up <br />
+                above vr
+              </h3>
+            </div>
+            <!-- END Card -->
+
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-pocket-borealis.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-pocket-borealis.jpg"
+                  alt="Image pocket borealis"
+                />
+              </picture>
+              <h3 class="card__title">Pocket <br />borealis</h3>
+            </div>
+            <!-- END Card -->
+
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-curiosity.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-curiosity.jpg"
+                  alt="curiosity"
+                />
+              </picture>
+              <h3 class="card__title">The <br />curiosity</h3>
+            </div>
+            <!-- END Card -->
+
+            <!-- Card -->
+            <div class="gallery__card card">
+              <picture class="card__picture">
+                <source
+                  srcset="./images/desktop/image-fisheye.jpg"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  src="./images/mobile/image-fisheye.jpg"
+                  alt="Image fisheye"
+                />
+              </picture>
+              <h3 class="card__title">make it <br />fisheye</h3>
+            </div>
+            <!-- END Card -->
+          </div>
+          <!-- END Gallery -->
+
+          <!-- Filter-btn -->
+          <button class="creations__filter-btn filter-btn">See all</button>
+          <!-- END filter-btn -->
+        </div>
+      </div>
+    </main>
+    <!-- **************************END MAIN******************************* -->
+
+    <!-- **************************FOOTER******************************* -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <!-- Footer left -->
+        <div class="footer__left">
+          <div class="footer__logo logo">
+            <a href="#header" class="logo__link">
+              <img
+                src="./images/logo.svg"
+                alt="Loopstudios logo"
+                class="logo__img"
+              />
+            </a>
+          </div>
+          <ul class="footer__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link">About </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link"> Careers </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link"> Events </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link"> Products </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link"> Support </a>
+            </li>
+          </ul>
+        </div>
+        <!-- END Footer left -->
+
+        <!-- Footer Right -->
+        <div class="footer__right">
+          <div class="footer__partners">
+            <a href="#" class="footer__brand-link link">
+              <img
+                src="./images/icon-facebook.svg"
+                alt=""
+                class="footer__brand-img"
+              />
+            </a>
+            <a href="#" class="footer__brand-link link">
+              <img
+                src="./images/icon-twitter.svg"
+                alt=""
+                class="footer__brand-img"
+              />
+            </a>
+            <a href="#" class="footer__brand-link link">
+              <img
+                src="./images/icon-pinterest.svg"
+                alt=""
+                class="footer__brand-img"
+              />
+            </a>
+            <a href="#" class="footer__brand-link link">
+              <img
+                src="./images/icon-instagram.svg"
+                alt=""
+                class="footer__brand-img"
+              />
+            </a>
+          </div>
+          <p class="footer__reserved">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
+        <!-- END Footer Right -->
+      </div>
+      
+      <!-- Attribution -->
+      <div class="attribution">
+        Challenge by
+        <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="attribution__link">ANDRIASON David</a>.
+      </div>
+      <!-- END Attribution -->
+    </footer>
+     <!-- **************************END FOOTER******************************* -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
